@@ -16,6 +16,7 @@ import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
+import AddPost from './pages/Post/AddPost';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -40,6 +41,15 @@ function App() {
             <>
               <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <ECommerce />
+            </>
+          }
+        />
+        <Route
+          path="/post/add"
+          element={
+            <>
+              <PageTitle title="Form Elements | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <AddPost />
             </>
           }
         />
